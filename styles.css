@@ -1,0 +1,81 @@
+/* this is import font from google fonts */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+/* can use .heading div only
+
+if you put !important in the end, this is rank 1 highest prio
+highest priority: id
+next is parent element and class
+next is class and class
+next is class
+last is parent element 
+
+
+only use id, class and generic
+*/
+
+
+div.heading-div 
+{
+  color: red;
+  background-color: aqua;
+  width: 100%;
+  max-width: 80vw;
+  /* height: 100vh; */
+
+  /* fonts */
+  font-family: Montserrat, sans-serif;
+  font-size: 30px;
+  font-weight: bold;
+
+  /* border */
+  border: 12px solid black;
+
+  /* padding: top right bottom left; */
+  /* margin: top right bottom left;        if only have 4 description*/
+  /* margin: top-bottom right-left;        if only have 2 description*/
+  /* box-sizing: content-box;             this is one is default width measurement in the content*/
+  /* box-sizing: border-box;             width measurement in the border*/
+
+  box-sizing: border-box;
+
+  /* position */
+  /* static = default */
+  /* relative, absolute, sticky, fixed */
+
+}
+
+h5
+{
+  animation: pointdown 1000ms infinite alternate-reverse;
+  
+}
+
+
+@keyframes pointdown{
+  0%{
+    transform: translateY(0);
+    color: red;
+  }
+  100%{
+    transform: translateY(16px);
+    color: black;
+  }
+
+}
+
+@media (max-width: 480px) {
+  div.heading-div
+  {
+    font-size: 14px;
+  }
+}
+
+/* before and after */
+/*
+p::before
+{
+  content: "";
+}
+*/
+
